@@ -16,8 +16,3 @@ RUN apt-get update && \
     make install && \
     cd ../../.. && \
     rm -rf micropython
-COPY ./install_packages.sh .
-COPY ./requirements.txt .
-RUN bash ./install_packages.sh && \
-    rm -f install_packages.sh && \
-    rm -f requirements.txt
